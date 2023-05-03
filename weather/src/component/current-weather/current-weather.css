@@ -1,0 +1,202 @@
+.weather {
+  width: 300px;
+  border-radius: 6px;
+  box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+  color: azure;
+  background-color: #444040;
+  margin: 20px auto 0 auto;
+  padding: 0 20px 20px 20px;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 1px;
+}
+.weather-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+}
+
+.weather-icon {
+  width: 100px;
+}
+
+.temperature{
+   position: absolute;
+   top: 166px;
+   z-index: 15;
+   left: 10px;
+   font-size: large;
+   font-weight: 600;
+}
+
+.details {
+  width: 100%;
+  padding: 20px;
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+}
+.parameter-label {
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+}
+.parameter-value {
+  text-align: right;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.thermometer {
+  height: 250px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.logo {
+  position: relative;
+  height: 225px;
+  width: 50px;
+}
+
+.bar {
+  border: 4px solid #2a2a2e;
+  border-bottom: none;
+  z-index: 1;
+  height: 180px;
+  width: 20px;
+  background-color: white;
+  border-radius: 12px 12px 0 0;
+  position: absolute;
+  top: -10px;
+  left: 58%;
+  transform: translateX(-50%);
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  border: 4px solid #2a2a2e;
+}
+
+.circle::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.38);
+  z-index: 1;
+}
+
+.bar::after {
+  content: "";
+  display: block;
+  /*height: 202px;*/
+  padding-top: var(--height);
+  width: 12px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -22px;
+  border-radius: 10px 10px 0 0;
+  background-color: red;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.38);
+}
+
+.graduations {
+  z-index: 1;
+  position: absolute;
+  border-top: 1.5px solid #2a2a2e;
+  border-bottom: 1.5px solid #2a2a2e;
+  height: 30px;
+  width: 12px;
+  right: 20px;
+  top: 70px;
+}
+
+.graduations::before {
+  content: "";
+  position: absolute;
+  border-top: 1.5px solid#2a2a2e;
+  border-bottom: 1.5px solid#2a2a2e;
+  height: 28px;
+  width: 12px;
+  top: -60px;
+}
+.graduations::after {
+  content: "";
+  position: absolute;
+  border-top: 1.5px solid #2a2a2e;
+  border-bottom: 1.5px solid #2a2a2e;
+  height: 28px;
+  width: 12px;
+  top: 59px;
+}
+.fourty {
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  color: crimson;
+}
+
+.thirty {
+  position: absolute;
+  top: 28px;
+  left: -10px;
+  color: orangered;
+}
+
+.twenty {
+  position: absolute;
+  top: 58px;
+  left: -10px;
+  color: orange;
+}
+
+.ten {
+  position: absolute;
+  top: 89px;
+  left: -10px;
+  color: yellow;
+}
+
+.zero {
+  position: absolute;
+  top: 118px;
+  left: -5px;
+  color: chartreuse;
+}
+.minus-ten {
+  position: absolute;
+  top: 148px;
+  left: -17px;
+  color: lightblue;
+}
